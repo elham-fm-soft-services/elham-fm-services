@@ -73,7 +73,41 @@
             font-weight: bold;
         }
     </style>
-</head>
+</head<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 10px;
+}
+
+.service-card p {
+  margin: 0 10px 15px;
+  font-size: 14px;
+}
+</style>
+>
 <body>
 
 <header>
@@ -103,51 +137,41 @@
             pest control, landscaping, and manpower solutions across
             residential, commercial, and industrial facilities.
             .service-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
+
         </p>
     </div>
 
-   <section id="services">
+   <section>
   <h2>Our Services</h2>
 
   <div class="services">
-    <div class="service">
-      <img src="cleaning.jpg" alt="Cleaning Service">
+
+    <div class="service-card">
+      <img src="cleaning.jpg" alt="Cleaning Services">
       <h3>Cleaning Services</h3>
       <p>Professional commercial and residential cleaning solutions.</p>
     </div>
-      width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
 
-    <div class="service">
-      <img src="housekeeping.jpg" alt="Housekeeping Service">
+    <div class="service-card">
+      <img src="housekeeping.jpg" alt="Housekeeping">
       <h3>Housekeeping</h3>
-      <p>Reliable housekeeping staff for facilities and residences.</p>
+      <p>Reliable housekeeping staff for facilities.</p>
     </div>
 
-    <div class="service">
-      <img src="pest-control.jpg" alt="Pest Control Service">
+    <div class="service-card">
+      <img src="pest.jpg" alt="Pest Control">
       <h3>Pest Control</h3>
       <p>Safe and effective pest control services.</p>
     </div>
 
-    <div class="service">
-      <img src="landscaping.jpg" alt="Landscaping Service">
+    <div class="service-card">
+      <img src="landscaping.jpg" alt="Landscaping">
       <h3>Landscaping</h3>
-      <p>Landscape maintenance and green area care.</p>
+      <p>Landscape maintenance and garden care.</p>
     </div>
 
-
-
-
-
+  </div>
+</section>
 
       
 <a class="whatsapp" href="https://wa.me/919072323932" target="_blank">
@@ -168,6 +192,7 @@
 <footer>
     <p>© 2026 ELHAM FM SERVICES. All Rights Reserved.</p>
 </footer>
+
 
 
 
