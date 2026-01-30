@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <meta name="description" content="ELHAM FM Services offers professional facility management, cleaning, housekeeping, pest control and landscaping services in Saudi Arabia.">
+<meta name="keywords" content="Facility Management Saudi Arabia, Cleaning Services Riyadh, Housekeeping KSA, Pest Control Saudi Arabia">
+<meta name="author" content="ELHAM FM SERVICES">
+<head>
+    <style>
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 10px;
+}
+
+.service-card p {
+  margin: 0 10px 15px;
+  font-size: 14px;
+}
+</style>
+<body>
+
+<header><header class="header">
+  <img src="logo.png" alt="ELHAM FM Services Logo" class="logo">
+</header>
+    <h1>ELHAM FM SERVICES</h1>
+    <p>Soft Services Facility Management</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Professional Soft Services FM Solutions</h2>
+    <p>Delivering hygiene, care, and excellence for your facilities</p>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About</h2>
+        <p>
+            provides professional cleaning, housekeeping,
+            pest control, landscaping, and manpower solutions across
+            residential, commercial, and industrial facilities.
+
+        </p>
+    </div>
+
+   <section>
+  <h2>Our Services</h2>
+
+  <div class="services">
+
+    <div class="service-card">
+      <img src="cleaning.jpg" alt="Cleaning Services">
+      <h3>Cleaning Services</h3>
+      <p>Professional commercial and residential cleaning solutions.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="housekeeping.jpg" alt="Housekeeping">
+      <h3>Housekeeping</h3>
+      <p>Reliable housekeeping staff for facilities.</p>
+    </div>
+
+    <div class="service-card">
+     <img src="pest-control.jpg" alt="Pest Control">
+      <h3>Pest Control</h3>
+      <p>Safe and effective pest control services.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="landscaping.jpg" alt="Landscaping">
+      <h3>Landscaping</h3>
+      <p>Landscape maintenance and garden care.</p>
+    </div>
+
+  </div>
+</section>
+    <section class="contact">
+  <h2>Request a Quote</h2>
+
+  <form onsubmit="sendWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="service" placeholder="Required Service" required>
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</section>
+
+<script>
+function sendWhatsApp() {
+  var name = document.getElementById("name").value;
+  var service = document.getElementById("service").value;
+  var message = document.getElementById("message").value;
+
+  var url = "https://wa.me/966541951234?text="
+    + "Name: " + name + "%0a"
+    + "Service: " + service + "%0a"
+    + "Message: " + message;
+
+  window.open(url, "_blank");
+}
+</script>
+
+    <section class="services">
+  <h2>Our Work Gallery</h2>
+
+  <div class="services">
+    <div class="service-box">
+      <img src="gallery1.jpg">
+      <p>Commercial Cleaning</p>
+    </div>
+
+    <div class="service-box">
+      <img src="gallery2.jpg">
+      <p>Housekeeping</p>
+    </div>
+
+    <div class="service-box">
+      <img src="gallery3.jpg">
+      <p>Pest Control</p>
+    </div>
+
+    <div class="service-box">
+      <img src="gallery4.jpg">
+      <p>Landscaping</p>
+    </div>
+  </div>
+</section>
+
+      
+<a class="whatsapp" href="https://wa.me/919072323932" target="_blank">
+    💬 WhatsApp
+</a>
+    
+            📍 Location: Saudi Arabia<br>
+            📞 Phone: +966 54 195 1234<br>
+            📲 WhatsApp: +91 90723 23932<br>
+            📧 Email: muhammedfathima90@gmail.com
+        </p>
+    </div>
+
+</body>
+
+</html>
+<a href="https://wa.me/+91 9072323932" target="_blank" style="text-decoration:none;">
+  <i class="fab fa-whatsapp" style="color:#25D366; font-size:24px;"></i>
+  Chat on WhatsApp
+</a>
+<footer>
+    <p>© 2026 ELHAM FM SERVICES. All Rights Reserved.</p>
+</footer>
+
