@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <meta name="description" content="ELHAM FM Services offers professional facility management, cleaning, housekeeping, pest control and landscaping services in Saudi Arabia.">
+<meta name="keywords" content="Facility Management Saudi Arabia, Cleaning Services Riyadh, Housekeeping KSA, Pest Control Saudi Arabia">
+<meta name="author" content="ELHAM FM SERVICES">
 <head>
     <style>
 
@@ -95,6 +98,57 @@
 
   </div>
 </section>
+    <section class="contact">
+  <h2>Request a Quote</h2>
+
+  <form onsubmit="sendWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="service" placeholder="Required Service" required>
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</section>
+
+<script>
+function sendWhatsApp() {
+  var name = document.getElementById("name").value;
+  var service = document.getElementById("service").value;
+  var message = document.getElementById("message").value;
+
+  var url = "https://wa.me/966541951234?text="
+    + "Name: " + name + "%0a"
+    + "Service: " + service + "%0a"
+    + "Message: " + message;
+
+  window.open(url, "_blank");
+}
+</script>
+
+    <section class="services">
+  <h2>Our Work Gallery</h2>
+
+  <div class="services">
+    <div class="service-box">
+      <img src="gallery1.jpg">
+      <p>Commercial Cleaning</p>
+    </div>
+
+    <div class="service-box">
+      <img src="gallery2.jpg">
+      <p>Housekeeping</p>
+    </div>
+
+    <div class="service-box">
+      <img src="gallery3.jpg">
+      <p>Pest Control</p>
+    </div>
+
+    <div class="service-box">
+      <img src="gallery4.jpg">
+      <p>Landscaping</p>
+    </div>
+  </div>
+</section>
 
       
 <a class="whatsapp" href="https://wa.me/919072323932" target="_blank">
@@ -118,6 +172,7 @@
 <footer>
     <p>© 2026 ELHAM FM SERVICES. All Rights Reserved.</p>
 </footer>
+
 
 
 
