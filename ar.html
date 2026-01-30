@@ -33,6 +33,85 @@
   margin: 0 10px 15px;
   font-size: 14px;
 }
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Quote Form */
+.quote-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quote-form input,
+.quote-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.quote-form button {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quote-form button:hover {
+  background: #1ebe5d;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-item h4 {
+  padding: 15px;
+}
 </style>
 <body>
 
@@ -134,15 +213,19 @@
 </section>
   </div>
 </section>
-    <section class="contact">
+   <section>
   <h2>Request a Quote</h2>
+  <div class="container">
+    <form class="quote-form" 
+      onsubmit="window.open(`https://wa.me/966541951234?text=Name: ${name.value}%0AService: ${service.value}%0AMessage: ${message.value}`); return false;">
+      
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="service" placeholder="Required Service" required>
+      <textarea id="message" placeholder="Message"></textarea>
+      <button type="submit">Send via WhatsApp</button>
 
-  <form onsubmit="sendWhatsApp(); return false;">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="text" id="service" placeholder="Required Service" required>
-    <textarea id="message" placeholder="Message"></textarea>
-    <button type="submit">Send via WhatsApp</button>
-  </form>
+    </form>
+  </div>
 </section>
 
 <script>
