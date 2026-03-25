@@ -3,55 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Banner</title>
+  <title>Company Profile</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center; /* Center everything */
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .profile-container {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .logo {
+      max-width: 150px;
+      margin-bottom: 20px;
     }
 
     .banner {
       display: flex;
-      justify-content: center; /* Center images horizontally */
-      align-items: center; /* Align vertically */
-      gap: 20px; /* Space between images */
-      padding: 20px;
-      background-color: #f5f5f5; /* Optional background */
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
     }
 
     .banner img {
-      max-width: 200px; /* Adjust size as needed */
+      max-width: 200px;
       height: auto;
-      border-radius: 8px; /* Optional rounded corners */
+      border-radius: 8px;
     }
 
-    .logo {
-      display: block;
-      margin: 20px auto; /* Center logo */
-      max-width: 150px;
+    .profile-details {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-details h2 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+
+    .profile-details p {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-  <!-- Your Logo -->
-  <img src="logo.png" alt="Company Logo" class="logo">
+  <div class="profile-container">
+    <!-- Logo -->
+    <img src="logo.png" alt="Company Logo" class="logo">
 
-  <!-- Two images side by side -->
-  <div class="banner">
-    <img src="hvac.jpg" alt="HVAC Service">
-    <img src="maintenance.jpg" alt="Building Maintenance">
+    <!-- Two images side by side -->
+    <div class="banner">
+      <img src="hvac.jpg" alt="HVAC Service">
+      <img src="maintenance.jpg" alt="Building Maintenance">
+    </div>
+
+    <!-- Profile Details -->
+    <div class="profile-details">
+      <h2>Our Company</h2>
+      <p>We provide professional HVAC and building maintenance services across Saudi Arabia. Our team ensures top-quality service and client satisfaction.</p>
+      <p>Services include:</p>
+      <ul>
+        <li>Air conditioning installation and repair</li>
+        <li>Preventive maintenance</li>
+        <li>Cleaning services including sofa upholstery and carpet shampooing</li>
+      </ul>
+    </div>
   </div>
 
 </body>
 </html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Facilities Management Company in Saudi Arabia | ELHAM FM Service</title>
 
     <meta name="description" content="ELHAM FM Service is a professional Facilities Management and Hospitality company in Saudi Arabia.">
